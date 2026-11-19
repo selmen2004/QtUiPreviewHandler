@@ -87,6 +87,7 @@ def main():
                     r"tools\register.py",
                     r"tools\unregister.py",
                     r"tools\restart_explorer.bat",
+                    r"tools\restart_shell.ps1",
                     r"samples\login.ui",
                     r"samples\interactive_edit.ui",
                     "uninstall.exe"):

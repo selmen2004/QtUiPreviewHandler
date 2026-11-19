@@ -236,7 +236,7 @@ def main() -> int:
     for f in ("ui_render.py", "render_server.py"):
         shutil.copy2(os.path.join(ROOT, "renderer", f), os.path.join(STAGE, "renderer", f))
     os.makedirs(os.path.join(STAGE, "tools"))
-    for f in ("register.py", "unregister.py", "restart_explorer.bat"):
+    for f in ("register.py", "unregister.py", "restart_explorer.bat", "restart_shell.ps1"):
         shutil.copy2(os.path.join(ROOT, "tools", f), os.path.join(STAGE, "tools", f))
     os.makedirs(os.path.join(STAGE, "tests"))
     shutil.copy2(os.path.join(ROOT, "tests", "test_render.py"), os.path.join(STAGE, "tests", "test_render.py"))
