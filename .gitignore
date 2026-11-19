@@ -1,0 +1,26 @@
+# Local runtime / toolchain / generated artifacts — never committed.
+# The installer ships these via payload/ at build time; a fresh clone rebuilds
+# them with tools/make_payload.py from locally-provided wheels (.wheels/).
+.venv/
+.wheels/
+build/
+payload/
+dist/
+
+# Bundled third-party toolchains (portable NSIS / Inno Setup / GitHub CLI).
+tools/nsis/
+tools/nsis.zip
+tools/innosetup/
+tools/gh/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / OS noise
+*.user
+*.suo
+.vs/
+Thumbs.db
+desktop.ini

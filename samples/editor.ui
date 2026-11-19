@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditorWindow</class>
+ <widget class="QMainWindow" name="EditorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Editeur de lecons</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabCode">
+       <attribute name="title">
+        <string>Code</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="codeLayout">
+        <item>
+         <widget class="QPlainTextEdit" name="codeEdit">
+          <property name="plainText">
+           <string>import turtle
+
+t = turtle.Turtle()
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabAide">
+       <attribute name="title">
+        <string>Aide</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="aideLayout">
+        <item>
+         <widget class="QTextBrowser" name="helpBrowser">
+          <property name="html">
+           <string>&lt;h3&gt;Premiers pas&lt;/h3&gt;&lt;p&gt;Ecrivez du Python puis executez.&lt;/p&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>42</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

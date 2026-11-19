@@ -1,0 +1,4 @@
+LIBRARY QtUiPreviewHandler
+EXPORTS
+    DllGetClassObject   PRIVATE
+    DllCanUnloadNow     PRIVATE
